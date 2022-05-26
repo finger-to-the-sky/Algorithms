@@ -124,13 +124,13 @@ def matrix():
         matrixx.append(number)
         count = count + 1
         if count == 5:
-            row1 = (f'{matrixx[0]}\t{matrixx[1]}\t{matrixx[2]}\t{matrixx[3]}\t{matrixx[4]}\n')
+            row1 = (f'{matrixx[0]}\t{matrixx[1]}\t{matrixx[2]}\t{matrixx[3]}\t{sum(matrixx[0:4])}\n')
         if count == 10:
-            row2 = (f'{matrixx[5]}\t{matrixx[6]}\t{matrixx[7]}\t{matrixx[8]}\t{matrixx[9]}\n')
+            row2 = (f'{matrixx[5]}\t{matrixx[6]}\t{matrixx[7]}\t{matrixx[8]}\t{sum(matrixx[5:9])}\n')
         if count == 15:
-            row3 = (f'{matrixx[10]}\t{matrixx[11]}\t{matrixx[12]}\t{matrixx[13]}\t{matrixx[14]}\n')
+            row3 = (f'{matrixx[10]}\t{matrixx[11]}\t{matrixx[12]}\t{matrixx[13]}\t{sum(matrixx[10:14])}\n')
         if count == 20:
-            row4 = (f'{matrixx[15]}\t{matrixx[16]}\t{matrixx[17]}\t{matrixx[18]}\t{sum(matrixx)}\n')
+            row4 = (f'{matrixx[15]}\t{matrixx[16]}\t{matrixx[17]}\t{matrixx[18]}\t{sum(matrixx[15:19])}\n')
 
     return row1 + row2 + row3 + row4
 print(matrix())

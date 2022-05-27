@@ -55,7 +55,8 @@ def numbers():
         ls = []
         ls_2 = []
         for i in str(number):
-            if i == '2' or i == '4' or i == '6' or i == '8':
+            i = int(i)
+            if i % 2 == 0:
                 ls.append(i)
 
             else:
